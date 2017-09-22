@@ -1,0 +1,1310 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#"
+     xml:base="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia"
+     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia">
+        <rdfs:label xml:lang="en">Tourism in Apulia</rdfs:label>
+        <dcterms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rita Schiralli</dcterms:creator>
+        <ns:license rdf:resource="https://creativecommons.org/licenses/by-sa/3.0/"/>
+        <rdfs:comment xml:lang="en">Information about accomodation and important tourism point</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:comment xml:lang="en">The WGS84 latitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/2003/01/geo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">latitude</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:comment xml:lang="en">The WGS84 longitude of a SpatialThing (decimal degrees).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/2003/01/geo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geonames.org/ontology#locatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#locatedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#GeographicFeature"/>
+        <rdfs:comment xml:lang="en">Indicates that the subject resource is located in the object feature</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology/ontology_v3.1.rdf"/>
+        <rdfs:label xml:lang="en">locatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.geonames.org/ontology#locationMap -->
+
+    <owl:ObjectProperty rdf:about="http://www.geonames.org/ontology#locationMap">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#GeographicFeature"/>
+        <rdfs:range rdf:resource="http://www.geonames.org/ontology#Map"/>
+        <rdfs:comment xml:lang="en">A geonames map centered on the feature.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology/ontology_v3.1.rdf"/>
+        <rdfs:label xml:lang="en">map</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#galleryItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#galleryItem">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Image"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#File"/>
+        <rdfs:comment xml:lang="en">A file contained in a gallery</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/galleryItem"/>
+        <rdfs:label xml:lang="en">galleryItem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#location">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:comment>The relation between something and the point, 
+ or other geometrical thing in space, where it is.  For example, the realtionship between
+ a radio tower and a Point with a given lat and long.
+ Or a relationship between a park and its outline as a closed arc of points, or a road and
+ its location as a arc (a sequence of points).
+ Clearly in practice there will be limit to the accuracy of any such statement, but one would expect
+ an accuracy appropriate for the size of the object and uses such as mapping .</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://www.w3.org/2003/01/geo/"/>
+        <rdfs:label xml:lang="en">location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/depiction -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/depiction">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Image"/>
+        <rdfs:comment xml:lang="en">A depiction of some thing.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/#term_depiction"/>
+        <rdfs:label xml:lang="en">depiction</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geonames.org/ontology#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.geonames.org/ontology#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#GeographicFeature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The main international name of a feature. The value has no xml:lang tag.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/"/>
+        <rdfs:label xml:lang="en">geonames:name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#address">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Address of something as literal. Usually Building, but we also use it for the address of a Region&apos;s or Settlement&apos;s government</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/address</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#description">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/description"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#faxNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#faxNumber">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#TouristInformationCenter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The fax number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://schema.org/faxNumber</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">faxNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#hasMobilePhone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#hasMobilePhone">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#TouristInformationCenter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Relates an object (usually a person) to its mobile phone number.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontotext.com/proton/protonext#hasMobilePhone</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">hasMobilePhone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#CyclingInfrastructure"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Mosque"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#TouristInformationCenter"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/property/name</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#postalCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#postalCode">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A postal code (known in various countries as a post code, postcode, or ZIP code) is a series of letters and/or digits appended to a postal address for the purpose of sorting mail.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/postalCode</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">postalCode</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#sameAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#sameAs">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Mosque"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">URL of a reference Web page that unambiguously indicates the item&apos;s identity. E.g. the URL of the item&apos;s Wikipedia page, Freebase page, or official website.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/sameAs</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">sameAs</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#starRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#starRating">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/starRating</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">starRating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#url">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.geonames.org/ontology#Map"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#File"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/property/url"/>
+        <rdfs:label xml:lang="en">url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">personal mailbox - A personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a &apos;static inverse functional property&apos;, in that there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://xmlns.com/foaf/spec/#term_mbox</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">foaf:mbox</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/phone -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/phone">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A phone, specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://xmlns.com/foaf/spec/#term_phone"/>
+        <rdfs:label xml:lang="en">phone</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.geonames.org/ontology#Map -->
+
+    <owl:Class rdf:about="http://www.geonames.org/ontology#Map">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A Web page displaying a map</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology/ontology_v3.1.rdf"/>
+        <rdfs:label xml:lang="en">Map</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Agritourism">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Agritourism</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Agritourism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#AmusementPark">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">An amusement park.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/AmusementPark"/>
+        <rdfs:label xml:lang="en">AmusementPark</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Archaeological_site">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Archaeological_site</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Archaeological_site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Artisan_shop">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Artisan_shop</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Artisan_shop</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Beach">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">The shore of a body of water, especially when sandy or pebbly.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Beach</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Beach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#BedAndBreakfast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:comment xml:lang="en">Bed and breakfast.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/BedAndBreakfast</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">BedAndBreakfast</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Campground">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:comment xml:lang="en">A camping site, campsite, or campground is a place used for overnight stay in the outdoors. In British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or parks a camper; a campground may contain many campsites (Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Campsite).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/Campground</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Campground</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Castle">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Castles often are, but need not be a military structure. They can serve for status, pleasure and hunt as well.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Castle</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Castle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Church">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+        <rdfs:comment xml:lang="en">This is used for church buildings, not any other meaning of church.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Church</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Church</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#CyclingInfrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#CyclingInfrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Cycling infrastructure refers to all infrastructure which may be used by cyclists. This includes the same network of roads and streets used by motorists, except those roads from which cyclists have been banned (e.g., many freeways/motorways), plus additional bikeways that are not available to motor vehicles, such as bike paths, bike lanes, cycle tracks and, where permitted, sidewalks, plus amenities like bike racks for parking and specialized traffic signs and signals.The manner in which the public road network is designed, built and managed can have a significant effect on the utility and safety of cycling. The cycling network may be able to provide the users with direct, convenient routes minimizing unnecessary delay and effort in reaching their destinations. Settlements with a dense road network of interconnected streets tend to be viable utility cycling environments.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cycling_Infrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#EntertainmentBusiness">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A business providing entertainment.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/EntertainmentBusiness</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">EntertainmentBusiness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Farm_house">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Farm_house</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Farm_house</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#File -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#File">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A document with a filename</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/File"/>
+        <rdfs:label xml:lang="en">File</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Garden">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A garden is a planned space, usually outdoors, set aside for the display, cultivation, and enjoyment of plants and other forms of nature. (http://en.wikipedia.org/wiki/Garden)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Garden</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Garden</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#GeographicFeature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#GeographicFeature">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology/ontology_v3.1.rdf"/>
+        <rdfs:label xml:lang="en">GeographicFeature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/HistoricBuilding</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">HistoricBuilding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#HistoricalSettlement">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A place which used to be a city or town or village.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/HistoricalSettlement</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">HistoricalSettlement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Hotel</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Hotel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Image">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A document that contains a visual image</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/Image"/>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Lake">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/Lake"/>
+        <rdfs:label xml:lang="en">Lake</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Library">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/Library"/>
+        <rdfs:label xml:lang="en">Library</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Monastery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+        <rdfs:comment xml:lang="en">Monastery denotes the building, or complex of buildings, comprising the domestic quarters and workplace(s) of monastics, whether monks or nuns, and whether living in community or alone (hermits). The monastery generally includes a place reserved for prayer which may be a chapel, church or temple, and may also serve as an oratory.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Monastery</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Monastery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Mosque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Mosque">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+        <rdfs:comment xml:lang="en">A mosque, sometimes spelt mosk, is a place of worship for followers of Islam.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Mosque</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Mosque</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Museum">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A museum.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/Museum</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">Place of worship, such as a church, synagogue, or mosque.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/PlaceOfWorship</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">PlaceOfWorship</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Port">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">a location on a coast or shore containing one or more harbors where ships can dock and transfer people or cargo to or from land.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Port</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Port</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Resort">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation"/>
+        <rdfs:comment xml:lang="en">A resort is a place used for relaxation or recreation, attracting visitors for holidays or vacations. Resorts are places, towns or sometimes commercial establishment operated by a single company (Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Resort).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/Resort</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Resort</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Restaurant</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Restaurant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Shrine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#PlaceOfWorship"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Shrine</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Shrine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#SportClub">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A sports club, football club or F1 team. Those should be considered commercial although in many cases they are not run for profit.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ontotext.com/proton/protonext#SportClub</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">SportClub</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Theatre">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A theater or theatre (also a playhouse) is a structure where theatrical works or plays are performed or other performances such as musical concerts may be produced.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Theatre</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Theatre</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#TouristInformationCenter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#TouristInformationCenter">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A tourist information center.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org/TouristInformationCenter"/>
+        <rdfs:label xml:lang="en">TouristInformationCenter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tourist_guides">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Tourist_guides</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Tourist_guides</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Tower">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A Tower is a kind of structure (not necessarily a building) that is higher than the rest</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Tower</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Tower</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#Vehicle_rental">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.disit.org/km4city/schema#Vehicle_rental</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Vehicle_rental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/Tourism_in_Apulia#cave">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Cave</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Cave</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#Park">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A park is an area of open space provided for recreational use. http://en.wikipedia.org/wiki/Park</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://dbpedia.org/ontology/Park</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Park</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/seven/ontologies/2016/6/untitled-ontology-7#accomodation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A lodging business, such as a motel, hotel, or inn.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://schema.org/LodgingBusiness</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">LodgingBusiness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment xml:lang="en">A point, typically described using a coordinate system relative to Earth, such as WGS84.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.w3.org/2003/01/geo/</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#">
+        <dc:date>$Date: 2009/04/20 15:00:30 $</dc:date>
+        <rdfs:label>geo</rdfs:label>
+        <dc:description>A vocabulary for representing latitude, longitude and 
+ altitude information in the WGS84 geodetic reference datum. 
+ Version $Id: wgs84_pos.rdf,v 1.22 2009/04/20 15:00:30 timbl Exp $. See http://www.w3.org/2003/01/geo/ for more details.</dc:description>
+        <rdfs:comment>
+Recent changes to this namespace:
+$Log: wgs84_pos.rdf,v $
+Revision 1.22  2009/04/20 15:00:30  timbl
+Remove the time bits which have been deal with elsewhere eg in iCal.
+
+Revision 1.21  2009/04/20 12:52:47  timbl
+try again
+
+Revision 1.20  2009/04/20 12:42:11  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.19  2009/04/20 12:36:31  timbl
+Add Event (edited ages ago and never checked in), and location (following discussion http://chatlogs.planetrdf.com/swig/2009-04-20#T12-36-09)
+
+Revision 1.18  2006/02/01 22:01:04  danbri
+Clarified that lat and long are decimal degrees, and that alt is decimal metres about local reference ellipsoid
+
+Revision 1.17  2004/02/06 17:38:12  danbri
+Fixed a bad commit screwup
+
+Revision 1.15  2003/04/19 11:24:08  danbri
+Fixed the typo even more.
+
+Revision 1.14  2003/04/19 11:16:56  danbri
+fixed a typo
+
+Revision 1.13  2003/02/19 22:27:27  connolly
+relaxed domain constraints on lat/long/alt from Point to SpatialThing
+
+Revision 1.12  2003/01/12 01:41:41  danbri
+Trying local copy of XSLT doc.
+
+Revision 1.11  2003/01/12 01:20:18  danbri
+added a link to morten&apos;s xslt rdfs viewer.
+
+Revision 1.10  2003/01/11 18:56:49  danbri
+Removed datatype range from lat and long properties, since they would
+have required each occurance of the property to mention the datatype.
+
+Revision 1.9  2003/01/11 11:41:31  danbri
+Another typo; repaired rdfs:Property to rdf:Property x4
+
+Revision 1.8  2003/01/11 11:05:02  danbri
+Added an rdfs:range for each lat/long/alt property,
+http://www.w3.org/2001/XMLSchema#float
+
+Revision 1.7  2003/01/10 20:25:16  danbri
+Longer rdfs:comment for Point, trying to be Earth-centric and neutral about
+coordinate system(s) at the same time. Feedback welcomed.
+
+Revision 1.6  2003/01/10 20:18:30  danbri
+Added CVS log comments into the RDF/XML as an rdfs:comment property of the
+vocabulary. Note that this is not common practice (but seems both harmless
+and potentially useful).
+
+
+revision 1.5
+date: 2003/01/10 20:14:31;  author: danbri;  state: Exp;  lines: +16 -5
+Updated schema:
+Added a dc:date, added url for more info. Changed the rdfs:label of the
+namespace from gp to geo. Added a class Point, set as the rdfs:domain of
+each property. Added XML comment on the lat_long property suggesting that
+we might not need it (based on #rdfig commentary from implementors).
+
+revision 1.4
+date: 2003/01/10 20:01:07;  author: danbri;  state: Exp;  lines: +6 -5
+Fixed typo; several rdfs:about attributes are now rdf:about. Thanks to MortenF in
+#rdfig for catching this error.
+
+revision 1.3
+date: 2003/01/10 11:59:03;  author: danbri;  state: Exp;  lines: +4 -3
+fixed buglet in vocab, added more wgs links
+
+revision 1.2
+date: 2003/01/10 11:01:11;  author: danbri;  state: Exp;  lines: +4 -4
+Removed alt from the as-a-flat-string property, and switched from
+space separated to comma separated.
+
+revision 1.1
+date: 2003/01/10 10:53:23;  author: danbri;  state: Exp;
+basic geo vocab
+
+</rdfs:comment>
+        <dc:title>WGS84 Geo Positioning: an RDF vocabulary</dc:title>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat_long">
+        <rdfs:comment>A comma-separated representation of a latitude, longitude coordinate.</rdfs:comment>
+        <rdfs:label>lat/long</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
